@@ -1,0 +1,18 @@
+.BtnsSizes{
+    list-style: none;
+    display:flex;
+}
+.BtnSize{
+    border-radius: 20px;
+    background-color:#D8CFC3;
+    color: #264B66;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    border-style: solid;
+    border-color: #D8CFC3;
+}
+.list{
+    list-style: none;
+    right: 10px;
+}
