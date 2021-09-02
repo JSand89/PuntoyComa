@@ -5,9 +5,9 @@ function Card() {
     return (
         <div className={style.wrap}>
             <ul className={style.list}>
-                <li>Imagen</li>
-                <li>Nombre de la prenda</li>
-                <li>Valor</li>
+                <li className={style.imageClothing}>Imagen</li>
+                <li className={style.cardTextCursiv}>Nombre de la prenda</li>
+                <li className={style.cardText}>Valor</li>
                 <li>
                 <ul className={style.BtnsSizes}>
                     <li><button type="button" id="btnSizeS" className={style.BtnSize}>S</button></li>
@@ -16,10 +16,10 @@ function Card() {
                     <li><button type="button" id="btnSizeXL" className={style.BtnSize}>XL</button></li>
                 </ul>
                 </li>
-                <li><ul className={style.BtnsSizes}>
-                <li><button type="button" id="btnLess">-</button></li>
-                    <li>#</li>
-                    <li><button type="button" id="btnPluss">+</button></li>
+                <li><ul className={style.BtnsAmount}>
+                <li><button type="button" id="btnLess"  className={style.BtnPlus}>-</button></li>
+                    <li className={style.Amount}>#</li>
+                    <li><button type="button" id="btnPluss"  className={style.BtnPlus}>+</button></li>
                     </ul>
                 </li>
 
