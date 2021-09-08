@@ -1,15 +1,28 @@
 [
     {
-      "category_ids": [1, 0, 0],
+      "category_id": 0,
       "id": 1,
-      "image": " ",
-      "Name_of_clothes": "Falda negra ",
+      "image": " algo",
+      "itemName": "Falda negra ",
       "Price": 45000
     },
     {
-      "category_ids": [1, 2, 0],
+      "category_id": 1,
       "id": 2,
-      "image": " ",
-      "Name_of_clothes": "Blusa azul ",
-      "Price": 45000
-    }]
+      "image": " algo",
+      "itemName": "Blusa azul ",
+      "Price": 30000
+    },
+    {
+      "category_id": 2,
+      "id": 3,
+      "image": " algo",
+      "itemName": "Pantalon azul ",
+      "Price": 35000
+    },
+    {"category_id": 3,
+    "id": 4,
+    "image": "algo ",
+    "itemName": "Chaqueta Cafe ",
+    "Price": 80000
+  }]
