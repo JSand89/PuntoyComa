@@ -1,3 +1,6 @@
+.iconsWrap{
+    display: inline;
+}
 .icons{
     list-style: none;
     display:flex;

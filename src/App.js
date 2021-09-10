@@ -1,4 +1,5 @@
 import './App.css';
+import CardBag from './components/CardBag/CardBag';
 import Cards from './components/Cards/Cards';
 import Carrito from './components/Carrito/Carrito';
 import Footer from './components/Footer/Footer';
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       <Menu/>
       <Footer />
-      <Carrito/>
+      <CardBag/>
     </div>
   );
 }

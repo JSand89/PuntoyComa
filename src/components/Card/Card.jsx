@@ -2,9 +2,18 @@ import React from 'react'
 import CardBag from '../CardBag/CardBag'
 import style from './Card.module.css'
 function Card({props}) {
-    const [number, setNumber ]= React.useState(0)
+    const [numberItems, setNumber ]= React.useState(0)
     const [statusAddtoCar,StatusAddCar]=React.useState("default")
-    const [status,changeStatusSize]=React.useState("default")
+    const [statusSize,changeStatusSize]=React.useState("default")
+
+    function addCar(id){
+        StatusAddCar(id)
+        let idString= id.toString()
+        const info={numberItems:numberItems,size:statusSize,id:id,status:statusAddtoCar}
+        localStorage.setItem(idString,JSON.stringify(info))
+        console.log('siSirvo',id)
+
+    }
 
 
 
@@ -23,15 +32,14 @@ function Card({props}) {
                 </ul>
                 </li>
                 <li><ul className={style.BtnsAmount}>
-                <li><button  className={style.BtnPlus} onClick={()=> setNumber(number===0?number:number-1)}>-</button></li>
-                    <li className={style.Amount}>{number}</li>
-                    <li><button className={style.BtnPlus} onClick={()=> setNumber(number+1)}>+</button></li>
+                <li><button  className={style.BtnPlus} onClick={()=> setNumber(numberItems===0?numberItems:numberItems-1)}>-</button></li>
+                    <li className={style.Amount}>{numberItems}</li>
+                    <li><button className={style.BtnPlus} onClick={()=> setNumber(numberItems+1)}>+</button></li>
                     </ul>
                 </li>
-                <li><button className={style.BtnsAmount} onClick={()=>StatusAddCar(props.id)}>Agregar al carro</button></li>
+                <li><button className={style.BtnsAmount} onClick={()=>addCar(props.id)}>Agregar al carro{statusAddtoCar}</button></li>
             </ul>
-            <CardBag props={statusAddtoCar}/>
-
+            <CardBag/>
         </div>
 
     )

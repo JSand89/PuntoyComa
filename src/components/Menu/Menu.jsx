@@ -10,6 +10,10 @@ function Menu() {
 
     return (
         <div>
+            <ul>
+                <li><button className={style.menuComponent} onClick={()=>changeStatus('default')} >Logo</button></li>
+                <li><button className={style.menuComponent} onClick={()=>console.log('default')} >carrito</button></li>
+            </ul>
             <div className={style.boxExterior}>
             <ul className={style.menu}>
                 <li ><button className={style.menuComponent} onClick={()=>changeStatus('0')} >Blusa</button> </li>
