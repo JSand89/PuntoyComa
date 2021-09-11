@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import style from './Menu.module.css'
 import Cards from '../Cards/Cards'
 
-
-function Menu() {
+function Menu(props) {
     let [status,changeStatus]=React.useState("default")
-    console.log(status)
+    //console.log(status)
+    //const { obj } = useContext(Carrito)//console.log(memoryDad,'obt2Menu')
+   // const a=useContext(MemoryContext.Provider)
+   // console.log(a)
 
 
     return (

@@ -1,0 +1,91 @@
+.wrap{
+    margin-top: 100px;
+    margin-left: 8vw;
+}
+
+.BtnsSizes{
+    list-style: none;
+    display:flex;
+}
+
+.BtnsAmount{
+    list-style: none;
+    display:flex;
+    width: 170px;;
+    height: 30px;
+    background-color: #D8CFC3;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+.Amount{
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    color: #264B66;
+    font-size: 20px;
+
+}
+
+.BtnSize{
+    margin-top: 15px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color:#D8CFC3;
+    color: #264B66;
+    height: 30px;
+    width: 30px;
+    border-style: solid;
+    border-color: #D8CFC3;
+}
+.BtnSizeActive{
+    margin-top: 15px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color:#264B66;
+    color: #D8CFC3;
+    height: 30px;
+    width: 30px;
+    border-style: solid;
+    border-color: #D8CFC3;}
+
+.list{
+    list-style: none;
+}
+
+.imageClothing{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    background-color: #D8CFC3;
+}
+
+.cardText{
+
+    display: flex;
+    font-size: 25px;
+
+}
+
+.cardTextCursiv{
+    display: flex;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.BtnPlus{
+    height: 25px;
+    width: 30px;
+    margin-left: 20px;
+    background-color: #D8CFC3;
+    color: #264B66;
+    border-color: #D8CFC3;
+    border-style: solid;
+    font-size: 20px;
+}

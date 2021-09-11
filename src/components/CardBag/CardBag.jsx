@@ -1,5 +1,6 @@
 import React from 'react'
 import List from '../../productList.json'
+import Bag from '../Bag/Bag'
 
 function CardBag() {
 
@@ -11,18 +12,19 @@ function CardBag() {
    //---------Memory----
    let memory=memoryRecover.map(item=>JSON.parse(item))
 
-   console.log(auxMemoryRecover,'aux')
-   console.log(memoryRecover,'recover')
-   console.log(memory,'memory')
+   //console.log(auxMemoryRecover,'aux')
+   //console.log(memoryRecover,'recover')
+   //console.log(memory,'memory')
 // filter en camino
    let result=memory.map(item=>List.filter(save=>save.id==item.id ))
-   console.log(result,'result')
+  console.log(result,'result')
+  
 
    
 
     return (
         <div>
-
+            {result.map(item=><Bag props={item} key={item.id}/>)}
         </div>
     )
 }
