@@ -1,8 +1,16 @@
 .wrap{
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 8vw;
+    display:grid;
+    grid-template-columns: 2;
 }
-
+.wrapImg{
+    grid-column: 1;
+    margin-top: 50px;
+}
+.wrapBtn{
+    grid-column: 2;
+}
 .BtnsSizes{
     list-style: none;
     display:flex;
@@ -15,8 +23,8 @@
     height: 30px;
     background-color: #D8CFC3;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
     margin-left: 0px;
 }
 
@@ -30,7 +38,7 @@
 }
 
 .BtnSize{
-    margin-top: 15px;
+    /* margin-top: 15px; */
     margin-right: 20px;
     border-radius: 20px;
     background-color:#D8CFC3;
@@ -41,7 +49,7 @@
     border-color: #D8CFC3;
 }
 .BtnSizeActive{
-    margin-top: 15px;
+    /* margin-top: 15px; */
     margin-right: 20px;
     border-radius: 20px;
     background-color:#264B66;
@@ -60,8 +68,8 @@
     align-content: center;
     flex-direction: column;
     justify-content: center;
-    height: 400px;
-    width: 300px;
+    height: 100px;
+    width: 75px;
     background-color: #D8CFC3;
 }
 
