@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState }from 'react'
 import List from '../../productList.json'
 import Bag from '../Bag/Bag'
 import style from './CardBag.module.css'
 
 function CardBag() {
 
-
+ 
   //console.log(List,'list')
   //---------Memory recover-------
    let auxMemoryRecover=List.map(item=>localStorage.getItem(item.id.toString()))
@@ -22,12 +22,15 @@ function CardBag() {
   console.log(result,'result')
 //-----everything abaut WhatsApp
     let subtotal=memory.map(item=>item.subtotal)
-    let total=subtotal.reduce(function(a,b){return a+b})
+    console.log(subtotal,'subt')
+    let total=subtotal==0? 0: subtotal.reduce(function(a,b){return a+b})
     let whatsAppMessege=JSON.stringify(memory)+'Su total es:'+total.toString()
     console.log(total,'total')
+ 
+
   function WsMessege(){
     console.log('WsMessege')
-    //localStorage.clear()
+    localStorage.clear()
 }
    
     return (
