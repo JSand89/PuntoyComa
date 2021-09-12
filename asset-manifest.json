@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/PuntoyComa/static/css/main.d8079b18.chunk.css",
+    "main.js": "/PuntoyComa/static/js/main.7908c95a.chunk.js",
+    "main.js.map": "/PuntoyComa/static/js/main.7908c95a.chunk.js.map",
+    "runtime-main.js": "/PuntoyComa/static/js/runtime-main.3a9e85cf.js",
+    "runtime-main.js.map": "/PuntoyComa/static/js/runtime-main.3a9e85cf.js.map",
+    "static/js/2.052c70b8.chunk.js": "/PuntoyComa/static/js/2.052c70b8.chunk.js",
+    "static/js/2.052c70b8.chunk.js.map": "/PuntoyComa/static/js/2.052c70b8.chunk.js.map",
+    "index.html": "/PuntoyComa/index.html",
+    "static/css/main.d8079b18.chunk.css.map": "/PuntoyComa/static/css/main.d8079b18.chunk.css.map",
+    "static/js/2.052c70b8.chunk.js.LICENSE.txt": "/PuntoyComa/static/js/2.052c70b8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a9e85cf.js",
+    "static/js/2.052c70b8.chunk.js",
+    "static/css/main.d8079b18.chunk.css",
+    "static/js/main.7908c95a.chunk.js"
+  ]
+}
