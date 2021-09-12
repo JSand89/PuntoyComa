@@ -42,13 +42,13 @@ function App() {
     <Footer/>
   </div>
   }
-  
+  git
   function Users() {
     return <h2>Users</h2>;
   }
   return (
 
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
  <div>
         <nav class={style.menu}> 
           <ul  className={style.menu}>
