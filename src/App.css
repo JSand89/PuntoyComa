@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-.menu{
+ .li{
   list-style: none;
   display:flex;
   margin:0px;
@@ -11,6 +11,7 @@
   border-radius: 10px;
 
 }
+
 .menuComponent{
   background-color: #D8CFC3;
   border-style:hidden;

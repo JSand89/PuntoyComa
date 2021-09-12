@@ -64,7 +64,7 @@ function Card({props}) {
     return (
         <div className={style.wrap}>
             <ul className={style.list}>
-                <li className={style.imageClothing}>Imagen</li>
+                <li className={style.imageClothing}><img src={props.image} alt="imagen"/></li>
                 <li className={style.cardTextCursiv}>{props.itemName}</li>
                 <li className={style.cardText}>${props.Price}</li>
                 <li>

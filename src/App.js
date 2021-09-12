@@ -50,9 +50,9 @@ function App() {
 
     <Router>
  <div>
-        <nav >
+        <nav class={style.menu}> 
           <ul  className={style.menu}>
-            <li className={style.menuComponent} >
+            <li className={style.menuComponent}>
               <Link to="/">Tienda</Link>
             </li>
             <li className={style.menuComponent} >

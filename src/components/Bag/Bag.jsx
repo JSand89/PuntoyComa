@@ -9,13 +9,13 @@ function Bag({props}) {
     let memory=memoryRecover.map(item=>JSON.parse(item))
    // console.log(memory,'memory')
     let memoryActive=memory.filter(item=>item.id===props[0].id)
-    console.log(memoryActive[0],'memoryActive')
+    //console.log(memoryActive[0],'memoryActive')
 
 ////--------State variable    
     const [numberItems, setNumber ]= React.useState(memoryActive[0].numberItems)
     const [statusSize,changeStatusSize]=React.useState(memoryActive[0].size)
     const itemBag=List.filter(item=>item.id===props[0].id)
-    console.log(itemBag[0],'itemBag')
+    //console.log(itemBag[0],'itemBag')
     let itemName=itemBag[0].itemName
     let itemImage=itemBag[0].image
     let itemPrice=itemBag[0].Price
@@ -66,10 +66,20 @@ const colorActive={color:'#D8CFC3',BackColor:'#264B66'}
                 break;
         }
     },[statusSize])
+
+    useEffect(()=>{
+        let idString= itemBag[0].id.toString()
+        let subtotal=numberItems*itemPrice
+        const info={numberItems:numberItems,size:statusSize,id:itemBag[0].id,Name:itemName,price:itemPrice,subtotal:subtotal}
+        localStorage.setItem(idString,JSON.stringify(info))
+        //console.log('siSirvo')
+    },[statusSize],[numberItems])
+
+
         return (
         <div className={style.wrap}>
             <div className={style.wrapImg}>
-                <li className={style.imageClothing}>Imagen</li>
+                <li className={style.imageClothing}><img src={itemImage} alt="img"/></li>
             </div>
             <div className={style.wrapBtn}>
                 <ul className={style.list}>

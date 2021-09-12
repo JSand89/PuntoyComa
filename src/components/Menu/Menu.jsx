@@ -9,13 +9,14 @@ function Menu(props) {
    // const a=useContext(MemoryContext.Provider)
    // console.log(a)
 
-
+// blusa 0, pantalones 1, chaquetas 2, vestidos 3
     return (
         <div>
+            <div className={style.top}>
             <ul>
-                <li><button className={style.menuComponent} onClick={()=>changeStatus('default')} >Logo</button></li>
-                <li><button className={style.menuComponent} onClick={()=>console.log('default')} >carrito</button></li>
+                <li><button className={style.menuComponentLogo} onClick={()=>changeStatus('default')} >Logo</button></li>
             </ul>
+            </div>
             <div className={style.boxExterior}>
             <ul className={style.menu}>
                 <li ><button className={style.menuComponent} onClick={()=>changeStatus('0')} >Blusa</button> </li>

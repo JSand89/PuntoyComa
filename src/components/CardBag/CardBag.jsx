@@ -1,6 +1,7 @@
 import React from 'react'
 import List from '../../productList.json'
 import Bag from '../Bag/Bag'
+import style from './CardBag.module.css'
 
 function CardBag() {
 
@@ -14,17 +15,26 @@ function CardBag() {
 
    //console.log(auxMemoryRecover,'aux')
    //console.log(memoryRecover,'recover')
-   //console.log(memory,'memory')
+   console.log(memory,'memory')
 // filter en camino
    let result=memory.map(item=>List.filter(save=>save.id==item.id ))
+
   console.log(result,'result')
-  
-
+//-----everything abaut WhatsApp
+    let subtotal=memory.map(item=>item.subtotal)
+    let total=subtotal.reduce(function(a,b){return a+b})
+    let whatsAppMessege=JSON.stringify(memory)+'Su total es:'+total.toString()
+    console.log(total,'total')
+  function WsMessege(){
+    console.log('WsMessege')
+    //localStorage.clear()
+}
    
-
     return (
         <div>
             {result.map(item=><Bag props={item} key={item.id}/>)}
+            <button className={style.BtnsAmount} onClick={()=> WsMessege()}><a href={`https://wa.me/573115681660?text=${whatsAppMessege}`}>Pedir ahora</a></button>
+
         </div>
     )
 }

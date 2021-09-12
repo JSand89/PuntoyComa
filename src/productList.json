@@ -1,28 +1,66 @@
+
+
 [
     {
       "category_id": 0,
       "id": 1,
-      "image": " algo",
-      "itemName": "Falda negra ",
-      "Price": 45000
+      "image": " https://i.ibb.co/WfnTV02/Camisapiratacafe.png",
+      "itemName": "Blusa Pirata Cafe",
+      "Price": 35000
+    },
+    {
+      "category_id": 3,
+      "id": 2,
+      "image": " https://i.ibb.co/0C0ChFV/Falda-Lila.png",
+      "itemName": "Falda Lila",
+      "Price": 60000
     },
     {
       "category_id": 1,
-      "id": 2,
-      "image": " algo",
-      "itemName": "Blusa azul ",
-      "Price": 30000
-    },
-    {
-      "category_id": 2,
       "id": 3,
-      "image": " algo",
+      "image": "https://i.ibb.co/bHXH2qQ/Pantalon-Abertura.png",
       "itemName": "Pantalon azul ",
-      "Price": 35000
+      "Price": 55000
     },
-    {"category_id": 3,
+    {"category_id": 1,
     "id": 4,
-    "image": "algo ",
-    "itemName": "Chaqueta Cafe ",
-    "Price": 80000
+    "image": "https://i.ibb.co/vzcMr37/Pantalon-Flores.png",
+    "itemName": "Pantalon de Flores",
+    "Price": 55000
+  },
+  {"category_id": 3,
+    "id": 5,
+    "image": "https://i.ibb.co/N2jBcP0/vestido-Largo-Flores.png",
+    "itemName": "Vestido de Flore",
+    "Price": 75000
+  },
+  {"category_id": 3,
+    "id": 6,
+    "image": "https://i.ibb.co/QcYmdWk/Vestido-Lila.png",
+    "itemName": "Vestido de Flore",
+    "Price": 75000
+  },
+  {"category_id": 0,
+    "id": 7,
+    "image": "https://i.ibb.co/Z17pSD2/Blusa-Blanca.png",
+    "itemName": "Blusa Blanca",
+    "Price": 35000
+  },
+  {"category_id": 0,
+    "id": 8,
+    "image": "https://i.ibb.co/vkbjyvt/Blusa-Japonesa-Lila.png",
+    "itemName": "Blusa Lila Estilo Kimono",
+    "Price": 35000
+  },
+  {"category_id": 0,
+    "id": 9,
+    "image": "https://i.ibb.co/HGn4Y96/blusa-Pirata-Rosa.png",
+    "itemName": "Blusa Rosa Estilo Pirata",
+    "Price": 35000
+  },
+  {"category_id": 0,
+    "id": 10,
+    "image": "https://i.ibb.co/tcXQkcc/Chaqueta-Azul.png",
+    "itemName": "Chaqueta Larga Azul",
+    "Price": 75000
   }]

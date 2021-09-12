@@ -3,6 +3,7 @@
     margin-left: 8vw;
     display:grid;
     grid-template-columns: 2;
+    width: 300px;
 }
 .wrapImg{
     grid-column: 1;
