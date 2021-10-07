@@ -6,12 +6,11 @@ import {
   Link
 } from "react-router-dom"
   
-import React, { useState } from "react";
+import React from "react";
 import CardBag from './components/CardBag/CardBag';
 import Footer from './components/Footer/Footer';
 import Menu from './components/Menu/Menu'
 import style from './App.css'
-import List from './productList.json'
 
 
 
@@ -50,7 +49,7 @@ function App() {
 
     <Router basename={process.env.PUBLIC_URL}>
  <div>
-        <nav class={style.menu}> 
+        <nav className={style.menu}> 
           <ul  className={style.menu}>
             <li className={style.menuComponent}>
               <Link to="/">Tienda</Link>

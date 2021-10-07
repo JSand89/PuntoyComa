@@ -1,5 +1,4 @@
-import React, { useEffect, useState }from 'react'
-import CardBag from '../CardBag/CardBag'
+import React, { useEffect }from 'react'
 import style from './Card.module.css'
 function Card({props}) {
     const colorDefault={color:'#264B66',BackColor:'#D8CFC3'}

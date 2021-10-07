@@ -17,13 +17,13 @@ function CardBag() {
    //console.log(memoryRecover,'recover')
    console.log(memory,'memory')
 // filter en camino
-   let result=memory.map(item=>List.filter(save=>save.id==item.id ))
+   let result=memory.map(item=>List.filter(save=>save.id===item.id ))
 
   console.log(result,'result')
 //-----everything abaut WhatsApp
     let subtotal=memory.map(item=>item.subtotal)
     console.log(subtotal,'subt')
-    let total=subtotal==0? 0: subtotal.reduce(function(a,b){return a+b})
+    let total=subtotal===0? 0: subtotal.reduce(function(a,b){return a+b})
     let whatsAppMessege=JSON.stringify(memory)+'Su total es:'+total.toString()
     console.log(total,'total')
  
@@ -34,7 +34,7 @@ function CardBag() {
 }
    
     return (
-        <div>
+        <div className={style.wrap}>
             {result.map(item=><Bag props={item} key={item.id}/>)}
             <button className={style.BtnsAmount} onClick={()=> WsMessege()}><a href={`https://wa.me/573115681660?text=${whatsAppMessege}`}>Pedir ahora</a></button>
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState }from 'react'
+import React, { useEffect}from 'react'
 import List from '../../productList.json'
 import style from './Bag.module.css'
 function Bag({props}) {

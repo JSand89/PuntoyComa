@@ -1,3 +1,8 @@
 .wraper{
     align-content: space-around;
 }
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
